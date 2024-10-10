@@ -1,0 +1,17 @@
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.Form1.resources
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.csproj.GenerateResource.cache
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.AssemblyInfoInputs.cache
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.AssemblyInfo.cs
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.csproj.CoreCompileInputs.cache
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.sourcelink.json
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\bin\Debug\net8.0-windows\Project2.exe
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\bin\Debug\net8.0-windows\Project2.deps.json
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\bin\Debug\net8.0-windows\Project2.runtimeconfig.json
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\bin\Debug\net8.0-windows\Project2.dll
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\bin\Debug\net8.0-windows\Project2.pdb
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.dll
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\refint\Project2.dll
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.pdb
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\Project2.genruntimeconfig.cache
+C:\Repositories\Technical_University_Varna_2024\Third Year 2024-2025\Windows Form Apps with C#\Lab1\Project2\Project2\obj\Debug\net8.0-windows\ref\Project2.dll

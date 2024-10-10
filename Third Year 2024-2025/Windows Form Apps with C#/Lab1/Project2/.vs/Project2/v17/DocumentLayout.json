@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Repositories\\Technical_University_Varna_2024\\Third Year 2024-2025\\Windows Form Apps with C#\\Lab1\\Project2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E329564B-5E71-4832-A6C0-5BC0F815961F}|Project2\\Project2.csproj|c:\\repositories\\technical_university_varna_2024\\third year 2024-2025\\windows form apps with c#\\lab1\\project2\\project2\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E329564B-5E71-4832-A6C0-5BC0F815961F}|Project2\\Project2.csproj|solutionrelative:project2\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E329564B-5E71-4832-A6C0-5BC0F815961F}|Project2\\Project2.csproj|c:\\repositories\\technical_university_varna_2024\\third year 2024-2025\\windows form apps with c#\\lab1\\project2\\project2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E329564B-5E71-4832-A6C0-5BC0F815961F}|Project2\\Project2.csproj|solutionrelative:project2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E329564B-5E71-4832-A6C0-5BC0F815961F}|Project2\\Project2.csproj|c:\\repositories\\technical_university_varna_2024\\third year 2024-2025\\windows form apps with c#\\lab1\\project2\\project2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E329564B-5E71-4832-A6C0-5BC0F815961F}|Project2\\Project2.csproj|solutionrelative:project2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Repositories\\Technical_University_Varna_2024\\Third Year 2024-2025\\Windows Form Apps with C#\\Lab1\\Project2\\Project2\\Calculator.cs",
+              "RelativeDocumentMoniker": "Project2\\Calculator.cs",
+              "ToolTip": "C:\\Repositories\\Technical_University_Varna_2024\\Third Year 2024-2025\\Windows Form Apps with C#\\Lab1\\Project2\\Project2\\Calculator.cs",
+              "RelativeToolTip": "Project2\\Calculator.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwBkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:10:21.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Repositories\\Technical_University_Varna_2024\\Third Year 2024-2025\\Windows Form Apps with C#\\Lab1\\Project2\\Project2\\Form1.cs",
+              "RelativeDocumentMoniker": "Project2\\Form1.cs",
+              "ToolTip": "C:\\Repositories\\Technical_University_Varna_2024\\Third Year 2024-2025\\Windows Form Apps with C#\\Lab1\\Project2\\Project2\\Form1.cs",
+              "RelativeToolTip": "Project2\\Form1.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowF4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T06:56:03.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Repositories\\Technical_University_Varna_2024\\Third Year 2024-2025\\Windows Form Apps with C#\\Lab1\\Project2\\Project2\\Form1.cs",
+              "RelativeDocumentMoniker": "Project2\\Form1.cs",
+              "ToolTip": "C:\\Repositories\\Technical_University_Varna_2024\\Third Year 2024-2025\\Windows Form Apps with C#\\Lab1\\Project2\\Project2\\Form1.cs [Design]",
+              "RelativeToolTip": "Project2\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T06:53:40.212Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
