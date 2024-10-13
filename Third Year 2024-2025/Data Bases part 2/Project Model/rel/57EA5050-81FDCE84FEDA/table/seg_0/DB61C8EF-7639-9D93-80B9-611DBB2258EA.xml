@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB61C8EF-7639-9D93-80B9-611DBB2258EA" name="Patient">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 08:43:07 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Patient_ID" id="502E1539-C3C8-0F50-B25C-CF05E38537AB">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 09:10:19 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name" id="F35C852B-C4B6-1930-5B60-1795CEE29AAC">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 08:46:19 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EGN" id="0320B6BF-2209-70A5-F293-7EA5964DFC62">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 08:48:39 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86EC049C-4F04-9E35-5C35-A354E062C49E" name="Patient_PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 09:10:19 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="502E1539-C3C8-0F50-B25C-CF05E38537AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

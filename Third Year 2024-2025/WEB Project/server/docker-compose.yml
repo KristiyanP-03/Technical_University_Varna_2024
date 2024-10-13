@@ -1,0 +1,29 @@
+services:
+  #описани на web server-a
+  web:
+    image: php:8.1-apache
+    container_name: php-web-server
+    volumes:
+      -   ../client:/var/www/html #връзване на директорията към сървъра
+    ports:
+      - "8080:80"
+    environment:
+     - MYSQL_HOST=db
+     - MYSQL_USER=kristiyanp
+     - MYSQL_PASSWORD=phpproject
+     - MYSQL_DATABASE=phpdb
+    depends_on: #базата преди сървъра
+      - db 
+    command: /bin/sh -c "docker-php-ext-install mysqli && apache2-foreground" # не ми тръгваше без това
+
+  db:
+    image: mysql:5.7
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: phpproject
+      MYSQL_DATABASE: phpdb
+      MYSQL_USER: kristiyanp
+      MYSQL_PASSWORD: phpproject
+    ports:
+      - "3306:3306"
+     

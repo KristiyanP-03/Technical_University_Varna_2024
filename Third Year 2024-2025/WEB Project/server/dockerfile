@@ -1,0 +1,14 @@
+#image на PHP 
+FROM php:8.1-apache
+
+#PHP extensions
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+#URL
+RUN a2enmod rewrite
+
+# PHP връзка с container-а
+COPY . /var/www/html/
+
+# порт за Apache web server
+EXPOSE 80

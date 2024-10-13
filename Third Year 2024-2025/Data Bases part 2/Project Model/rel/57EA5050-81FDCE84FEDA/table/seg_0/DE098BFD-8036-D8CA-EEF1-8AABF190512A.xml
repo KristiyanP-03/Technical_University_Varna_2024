@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE098BFD-8036-D8CA-EEF1-8AABF190512A" name="Doctor">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 08:48:50 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Doctor_ID" id="C6E15610-4C48-E370-9883-3CEB4D6F0FDA">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 09:11:30 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Specialty_ID" id="4C84A6A3-54D6-7475-E676-55B069339B24">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 09:45:01 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="963B31DF-D452-342C-DB4D-E67B94352C1E" referredColumn="7D99E218-27DB-9680-2213-288472E891E4"/>
+</associations>
+</Column>
+<Column name="Name" id="9709EE00-5C2D-5692-2BA9-4B493455B764">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 08:50:37 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Phone" id="31863852-2CC1-6490-0F88-AF1E35F95F49">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 08:51:03 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDB79298-20AC-C80B-8F1B-039814873DA5" name="Doctor_PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 09:11:30 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6E15610-4C48-E370-9883-3CEB4D6F0FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1EACDAC9-FD58-7318-A2CB-BA08F28A6372" name="Doctor_Specialties_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 09:45:01 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C84A6A3-54D6-7475-E676-55B069339B24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

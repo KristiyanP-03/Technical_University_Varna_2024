@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE87F47E-929C-0EF3-D3ED-A894EDA5713A" name="Treatement - Patient">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 10:32:15 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Register_Treatement_ID" id="1B031CF6-EC98-91BC-9785-7262AC5F054B">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 10:33:42 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Patient_ID" id="3E0900A6-FB46-9E3C-4E53-8D4F0949B28E">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 10:34:03 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB6AE590-C7B8-B29D-3E49-D2E9DAE828ED" referredColumn="502E1539-C3C8-0F50-B25C-CF05E38537AB"/>
+</associations>
+</Column>
+<Column name="Doctor_ID" id="32133994-269B-0E25-41E3-8A4C06C6D8C1">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 10:34:16 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0224E0EC-D0A4-6C29-CDF0-C724C98A2F66" referredColumn="C6E15610-4C48-E370-9883-3CEB4D6F0FDA"/>
+</associations>
+</Column>
+<Column name="Treatement_ID" id="5686B00D-B679-300C-B1A0-442E044A8A07">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 10:35:23 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC80C69F-19A1-D486-A728-03620C51CBD3" referredColumn="6903AC76-34E2-1526-E2F2-4B06F30FACD5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7AAB7B43-6983-848E-4A09-412F1472E5BC" name="Treatement - Patient_PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 10:33:45 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B031CF6-EC98-91BC-9785-7262AC5F054B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60B00898-806B-806A-1348-C6A06543DFA9" name="Treatement - Patient_Patient_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 10:34:03 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E0900A6-FB46-9E3C-4E53-8D4F0949B28E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40DB3879-5F78-C416-A9CB-BE0E5C033CA9" name="Treatement - Patient_Doctor_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 10:34:16 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32133994-269B-0E25-41E3-8A4C06C6D8C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE32AF22-A306-E13E-6173-859BF0284396" name="Treatement - Patient_Treatment_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-13 10:35:23 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5686B00D-B679-300C-B1A0-442E044A8A07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
