@@ -1,26 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F80D2405-F566-E445-8553-C6D68D6E647F" name="Treatment">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9883594B-5E51-5446-489E-EBF29749E72E" name="Treatement">
 <createdBy>DELL</createdBy>
-<createdTime>2024-10-13 08:51:33 UTC</createdTime>
+<createdTime>2024-10-15 06:08:02 UTC</createdTime>
 <ownerDesignName>Project Model</ownerDesignName>
-<ordsAlias>table_4</ordsAlias>
+<ordsAlias>table_9</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Treatement_ID" id="6903AC76-34E2-1526-E2F2-4B06F30FACD5">
+<Column name="Patient_ID" id="F9BCD33A-C4B1-B837-7382-3385220E0AC0">
 <createdBy>DELL</createdBy>
-<createdTime>2024-10-13 09:37:31 UTC</createdTime>
-<ownerDesignName>Project Model</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Date_ID" id="B5BFDF83-11F7-7CF5-D02F-C231EAD4D6C2">
-<createdBy>DELL</createdBy>
-<createdTime>2024-10-13 10:40:12 UTC</createdTime>
+<createdTime>2024-10-15 06:10:12 UTC</createdTime>
 <ownerDesignName>Project Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,12 +19,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="549B51AA-AEC7-76B7-44EF-B161563FD0BE" referredColumn="03F9848D-3E07-CA2E-B975-7F76F00B6ABA"/>
+<colAssociation fkAssociation="738C6AD7-FDBE-E8A4-56ED-84188ACFBF51" referredColumn="502E1539-C3C8-0F50-B25C-CF05E38537AB"/>
 </associations>
 </Column>
-<Column name="Duration_ID" id="4BF87041-29D8-08F9-9318-7DD1A45BA457">
+<Column name="Doctor_ID" id="E6D68CBB-F5ED-F464-A040-9D536CBD7AE1">
 <createdBy>DELL</createdBy>
-<createdTime>2024-10-13 10:11:48 UTC</createdTime>
+<createdTime>2024-10-15 06:10:20 UTC</createdTime>
 <ownerDesignName>Project Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -43,12 +33,34 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="51E28FAA-5CD8-EB1F-F09A-D288D963BA49" referredColumn="CC1B2961-A177-E449-EF6B-F13C62484B57"/>
+<colAssociation fkAssociation="28AFAE44-6028-D55F-A15E-7730FE873B15" referredColumn="C6E15610-4C48-E370-9883-3CEB4D6F0FDA"/>
 </associations>
 </Column>
-<Column name="Diagnosis_ID" id="36CB25C5-7185-378E-A123-453589DEEA39">
+<Column name="Date" id="A4A980E4-3137-33C1-06C0-982BBA033F50">
 <createdBy>DELL</createdBy>
-<createdTime>2024-10-13 09:47:51 UTC</createdTime>
+<createdTime>2024-10-15 06:08:30 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Duration" id="124A269E-A548-6CAE-A2C4-A3A187FBD30D">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-15 06:08:54 UTC</createdTime>
+<ownerDesignName>Project Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Diagnosis_ID" id="02368E74-8C60-347F-437D-096DBAA58D7A">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-15 06:09:31 UTC</createdTime>
 <ownerDesignName>Project Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -57,50 +69,39 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="5842994F-F1C2-7EF5-C60F-7CE4BF085071" referredColumn="35290A80-9E3C-1DFA-7196-CC4DB7176DD4"/>
+<colAssociation fkAssociation="0699BAA9-C001-ADD7-B75A-D5209A67FF67" referredColumn="35290A80-9E3C-1DFA-7196-CC4DB7176DD4"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3E293792-601B-74D1-9E9A-7FA83B7D5390" name="Treatment_PK">
+<ind_PK_UK id="2F52B363-B469-75E5-3517-F39983A26F95" name=" Diagnosis_ID">
 <createdBy>DELL</createdBy>
-<createdTime>2024-10-13 09:37:31 UTC</createdTime>
-<ownerDesignName>Project Model</ownerDesignName>
-<pk>true</pk>
-<indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="6903AC76-34E2-1526-E2F2-4B06F30FACD5"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="75DA03E9-A433-6639-8ED1-BB829DB6972A" name="Treatment_Diagnosis_FK">
-<createdBy>DELL</createdBy>
-<createdTime>2024-10-13 09:47:51 UTC</createdTime>
+<createdTime>2024-10-15 06:09:31 UTC</createdTime>
 <ownerDesignName>Project Model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="36CB25C5-7185-378E-A123-453589DEEA39"/>
+<colUsage columnID="02368E74-8C60-347F-437D-096DBAA58D7A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2B0DA081-66DC-390D-C216-EE6FDAC31FA1" name="Treatment_Treatement - Duration_FK">
+<ind_PK_UK id="1AA5ADD0-E558-A391-5507-FE9FC7CD20C3" name="Treatement_Patient_FK">
 <createdBy>DELL</createdBy>
-<createdTime>2024-10-13 10:11:48 UTC</createdTime>
+<createdTime>2024-10-15 06:10:12 UTC</createdTime>
 <ownerDesignName>Project Model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4BF87041-29D8-08F9-9318-7DD1A45BA457"/>
+<colUsage columnID="F9BCD33A-C4B1-B837-7382-3385220E0AC0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EF744C38-FECA-D27F-C8F0-E100818EC6BB" name="Treatment_Treatement - Dates_FK">
+<ind_PK_UK id="23488C91-8F90-8699-60DB-EBEF1D590629" name="Treatement_Doctor_FK">
 <createdBy>DELL</createdBy>
-<createdTime>2024-10-13 10:40:12 UTC</createdTime>
+<createdTime>2024-10-15 06:10:20 UTC</createdTime>
 <ownerDesignName>Project Model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B5BFDF83-11F7-7CF5-D02F-C231EAD4D6C2"/>
+<colUsage columnID="E6D68CBB-F5ED-F464-A040-9D536CBD7AE1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

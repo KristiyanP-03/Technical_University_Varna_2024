@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5842994F-F1C2-7EF5-C60F-7CE4BF085071" containerWithKeyObject="F80D2405-F566-E445-8553-C6D68D6E647F" localFKIndex="75DA03E9-A433-6639-8ED1-BB829DB6972A" name="Treatment_Diagnosis_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0699BAA9-C001-ADD7-B75A-D5209A67FF67" containerWithKeyObject="9883594B-5E51-5446-489E-EBF29749E72E" localFKIndex="2F52B363-B469-75E5-3517-F39983A26F95" name=" Diagnosis_ID">
 <createdBy>DELL</createdBy>
-<createdTime>2024-10-13 09:47:51 UTC</createdTime>
+<createdTime>2024-10-15 06:09:31 UTC</createdTime>
 <ownerDesignName>Project Model</ownerDesignName>
 <referredTableLongName>Treatement - Diagnosis</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
