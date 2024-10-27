@@ -36,7 +36,7 @@
 <colAssociation fkAssociation="28AFAE44-6028-D55F-A15E-7730FE873B15" referredColumn="C6E15610-4C48-E370-9883-3CEB4D6F0FDA"/>
 </associations>
 </Column>
-<Column name="Date" id="A4A980E4-3137-33C1-06C0-982BBA033F50">
+<Column name="Treatement_Date" id="A4A980E4-3137-33C1-06C0-982BBA033F50">
 <createdBy>DELL</createdBy>
 <createdTime>2024-10-15 06:08:30 UTC</createdTime>
 <ownerDesignName>Project Model</ownerDesignName>
