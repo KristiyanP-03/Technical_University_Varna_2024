@@ -1,0 +1,4 @@
+gcc main.c
+gcc -o file1 main.c file.c
+gcc -c main.c file.c
+gcc -o my_prog main.c file.c - компилираш ги

@@ -1,0 +1,51 @@
+calculate() {
+    local num1=$1
+    local operator=$2
+    local num2=$3
+
+    case $operator in
+        +)
+            echo "$num1 + $num2" | bc
+            ;;
+        -)
+            echo "$num1 - $num2" | bc
+            ;;
+        *)
+            echo "$num1 * $num2" | bc
+            ;;
+        /)
+            # Check if num2 is zero by using bc
+            if echo "$num2 == 0" | bc | grep -q 1; then
+                echo "ERROR: Cannot divide by zero!"
+            else
+                echo "$num1 / $num2" | bc
+            fi
+            ;;
+        *)
+            echo "ERROR: Invalid operator!"
+            ;;
+    esac
+}
+
+
+while true; do
+    read -p "n1 = " n1
+    read -p "operator is " opr
+    read -p "n2 = " n2
+
+    calculate $n1 $opr $n2
+
+    # Prompt to repeat or exit
+    while true; do
+        read -p "Wanna do it again? [Y/N] " answer
+        if [ "$answer" = "N" ]  [ "$answer" = "n" ]; then
+            echo "Exiting..."
+            break 2   # Exits both loops
+        elif [ "$answer" = "Y" ]  [ "$answer" = "y" ]; then
+            echo "---Enter new numbers and operation---"
+            break    # Breaks only the inner loop, allowing the outer loop to repeat
+        else
+            echo "ERROR: Invalid answer! Please enter Y or N."
+        fi
+    done
+done
