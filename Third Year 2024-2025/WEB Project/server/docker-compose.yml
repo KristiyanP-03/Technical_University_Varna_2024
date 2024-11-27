@@ -1,10 +1,10 @@
 services:
-  #описани на web server-a
+  # Описание на web сървъра
   web:
     image: php:8.1-apache
     container_name: php-web-server
     volumes:
-      -   ../client:/var/www/html #връзване на директорията към сървъра
+      -   ../client:/var/www/html # Връзване на директорията към сървъра
     ports:
       - "8080:80"
     environment:
@@ -12,9 +12,11 @@ services:
      - MYSQL_USER=kristiyanp
      - MYSQL_PASSWORD=phpproject
      - MYSQL_DATABASE=phpdb
-    depends_on: #базата преди сървъра
-      - db 
-    command: /bin/sh -c "docker-php-ext-install mysqli && apache2-foreground" # не ми тръгваше без това
+    depends_on: # Базата преди сървъра
+      - db
+    command: /bin/sh -c "docker-php-ext-install mysqli && apache2-foreground" # Не ми тръгваше без това
+    networks:
+      - app-network
 
   db:
     image: mysql:5.7
@@ -26,4 +28,23 @@ services:
       MYSQL_PASSWORD: phpproject
     ports:
       - "3306:3306"
-     
+    networks:
+      - app-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql-db
+      PMA_USER: kristiyanp
+      PMA_PASSWORD: phpproject
+    ports:
+      - "8081:80"
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
