@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.main-content h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.job-details {
+    line-height: 1.6;
+}
+
+.job-details p {
+    margin: 10px 0;
+}
+
+.job-details strong {
+    color: #555;
+}
+
+.job-details em {
+    color: #888;
+    font-size: 14px;
+}
+
+.job-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+}
+
+.like-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.like-btn:hover {
+    background-color: #218838;
+}
+
+.like-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+}
+
+p.warning {
+    color: #d9534f;
+    font-weight: bold;
+}

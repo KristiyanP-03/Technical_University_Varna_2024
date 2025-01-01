@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.profile-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.profile-content h2 {
+    text-align: center;
+}
+
+.profile-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-content form label {
+    margin-bottom: 5px;
+}
+
+.profile-content form input, 
+.profile-content form textarea, 
+.profile-content form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.profile-content form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.profile-content form button:hover {
+    background-color: #45a049;
+}
+
+.profile-content form input[type="file"] {
+    padding: 0;
+}
+

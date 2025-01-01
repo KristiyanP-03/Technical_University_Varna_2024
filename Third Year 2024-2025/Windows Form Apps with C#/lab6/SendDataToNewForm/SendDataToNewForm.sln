@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendDataToNewForm", "SendDataToNewForm\SendDataToNewForm.csproj", "{9FE565EA-F996-4024-BBC6-3FA7F86F4D7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FE565EA-F996-4024-BBC6-3FA7F86F4D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE565EA-F996-4024-BBC6-3FA7F86F4D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE565EA-F996-4024-BBC6-3FA7F86F4D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE565EA-F996-4024-BBC6-3FA7F86F4D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF882157-B156-4ED0-9086-5CF8E8D3DEDA}
+	EndGlobalSection
+EndGlobal
