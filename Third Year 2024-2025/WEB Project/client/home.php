@@ -28,6 +28,7 @@ $result = $conn->query($sql);
         <div class="nav-right">
             <?php if ($is_logged_in): ?>
                 <a href="profile.php">Profile</a>
+                <a href="chat.php">Chat</a> <!-- Added Chat Link -->
                 <a href="log_out.php">Log Out</a>
                 <a href="create_job_offer.php">Create Job Offer</a> <!-- Button to create a new job offer -->
             <?php else: ?>
