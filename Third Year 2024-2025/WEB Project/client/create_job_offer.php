@@ -2,28 +2,25 @@
 session_start();
 require 'db.php';
 
-// Redirect to login page if user is not logged in
 if (!isset($_SESSION['user_id'])) {
     header("Location: log_in.php");
     exit;
 }
 
-// Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $conn->real_escape_string($_POST['title']);
     $description = $conn->real_escape_string($_POST['description']);
     $phone_number = $conn->real_escape_string($_POST['phone_number']);
-    $images = $conn->real_escape_string($_POST['images']); // comma separated image URLs
-    $user_id = $_SESSION['user_id']; // The user who is creating the job offer
-    $likes = 0; // Initial like count
-    $comments = ''; // Empty comments initially
+    $images = $conn->real_escape_string($_POST['images']);
+    $user_id = $_SESSION['user_id'];
+    $likes = 0;
+    $comments = '';
 
-    // Insert the new job offer into the database
     $sql = "INSERT INTO job_offers (user_id, title, description, phone_number, images, likes, comments)
             VALUES ('$user_id', '$title', '$description', '$phone_number', '$images', '$likes', '$comments')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: home.php"); // Redirect to the home page after successful submission
+        header("Location: home.php");
         exit;
     } else {
         echo "Error: " . $conn->error;
@@ -32,10 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Job Offer</title>
     <link rel="stylesheet" href="static/css/create_job_offer.css">
 </head>

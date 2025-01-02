@@ -26,10 +26,8 @@ $conn->close();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="static/css/profile.css">
 </head>
@@ -56,7 +54,6 @@ $conn->close();
 
         <a href="edit_profile.php" class="edit-profile-btn">Edit Profile</a>
 
-        <!-- Delete Profile Button -->
         <form action="delete_profile.php" method="POST" class="delete-profile-form">
             <button type="submit" class="delete-profile-btn">Delete Profile</button>
         </form>

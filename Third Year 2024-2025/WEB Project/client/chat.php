@@ -2,7 +2,6 @@
 session_start();
 require 'db.php';
 
-// Ensure the user is logged in
 if (!isset($_SESSION['user_id'])) {
     header("Location: log_in.php");
     exit;
@@ -10,7 +9,6 @@ if (!isset($_SESSION['user_id'])) {
 
 $user_id = $_SESSION['user_id'];
 
-// Fetch all users except the logged-in user
 $sql_users = "SELECT id, username FROM users WHERE id != ?";
 $stmt = $conn->prepare($sql_users);
 $stmt->bind_param("i", $user_id);
@@ -19,7 +17,6 @@ $users_result = $stmt->get_result();
 $users = $users_result->fetch_all(MYSQLI_ASSOC);
 $stmt->close();
 
-// Fetch messages if a specific user is selected
 $selected_user_id = isset($_GET['user_id']) ? (int)$_GET['user_id'] : null;
 $messages = [];
 
@@ -45,7 +42,6 @@ if ($selected_user_id) {
     $stmt->close();
 }
 
-// Handle sending a message
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message'], $_POST['receiver_id'])) {
     $message = trim($_POST['message']);
     $receiver_id = (int)$_POST['receiver_id'];
@@ -64,10 +60,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message'], $_POST['re
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
     <link rel="stylesheet" href="static/css/chat.css">
 </head>

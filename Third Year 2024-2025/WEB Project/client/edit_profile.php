@@ -2,7 +2,6 @@
 session_start();
 require 'db.php';
 
-// Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
     header("Location: log_in.php");
     exit;
@@ -10,7 +9,6 @@ if (!isset($_SESSION['user_id'])) {
 
 $user_id = $_SESSION['user_id'];
 
-// Fetch the current user's data
 $sql = "SELECT username, email, bio, img_url FROM users WHERE id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $user_id);
@@ -24,27 +22,23 @@ if ($result->num_rows > 0) {
     exit;
 }
 
-// Process the form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $bio = $_POST['bio'];
     
-    // Handle image URL if provided
-    $img_url = $user['img_url']; // Default to existing image if not changed
+    $img_url = $user['img_url'];
     if (!empty($_POST['img_url'])) {
-        $img_url = $_POST['img_url']; // Use the new image URL provided by the user
+        $img_url = $_POST['img_url'];
     }
 
-    // Update user profile details in the database
     $sql_update = "UPDATE users SET username = ?, email = ?, bio = ?, img_url = ? WHERE id = ?";
     $stmt_update = $conn->prepare($sql_update);
     $stmt_update->bind_param("ssssi", $username, $email, $bio, $img_url, $user_id);
     
     if ($stmt_update->execute()) {
-        // Redirect immediately after successful update to avoid any output before header
         header("Location: profile.php");
-        exit; // Make sure to call exit after header to stop further execution
+        exit;
     } else {
         echo "Error updating profile: " . $conn->error;
     }

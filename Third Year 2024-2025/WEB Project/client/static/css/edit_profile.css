@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -69,9 +68,5 @@ body {
 
 .profile-content form button:hover {
     background-color: #45a049;
-}
-
-.profile-content form input[type="file"] {
-    padding: 0;
 }
 
