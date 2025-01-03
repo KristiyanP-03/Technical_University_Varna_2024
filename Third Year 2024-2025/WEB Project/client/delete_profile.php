@@ -9,27 +9,27 @@ if (!isset($_SESSION['user_id'])) {
 
 $user_id = $_SESSION['user_id'];
 
-// Delete likes associated with the user
+// Изтриване на лайкове по id
 $sql_delete_likes = "DELETE FROM likes WHERE user_id = ?";
 $stmt_likes = $conn->prepare($sql_delete_likes);
 $stmt_likes->bind_param("i", $user_id);
 $stmt_likes->execute();
 $stmt_likes->close();
 
-// Delete comments associated with the user
+// Изтриване на съобщения по id
 $sql_delete_comments = "DELETE FROM comments WHERE user_id = ?";
 $stmt_comments = $conn->prepare($sql_delete_comments);
 $stmt_comments->bind_param("i", $user_id);
 $stmt_comments->execute();
 $stmt_comments->close();
 
-// Delete job offers associated with the user
+// Изтриване на публикации по id
 $sql_delete_offers = "DELETE FROM job_offers WHERE user_id = ?";
 $stmt_offers = $conn->prepare($sql_delete_offers);
 $stmt_offers->bind_param("i", $user_id);
 
 if ($stmt_offers->execute()) {
-    // After deleting offers, delete the user
+    // Изтриване на потребител по id
     $sql_delete_user = "DELETE FROM users WHERE id = ?";
     $stmt_user = $conn->prepare($sql_delete_user);
     $stmt_user->bind_param("i", $user_id);

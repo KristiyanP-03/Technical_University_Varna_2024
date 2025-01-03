@@ -43,8 +43,8 @@ $conn->close();
 
     <div class="profile-content">
         <h2>Welcome, <?php echo htmlspecialchars($user['username']); ?>!</h2>
-        <p><strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
-        <p><strong>Bio:</strong> <?php echo htmlspecialchars($user['bio'] ?? 'No bio provided.'); ?></p>
+        <p><b>Email:</b> <?php echo htmlspecialchars($user['email']); ?></p>
+        <p><b>Bio:</b> <?php echo htmlspecialchars($user['bio'] ?? 'No bio provided.'); ?></p>
 
         <?php if (!empty($user['img_url'])): ?>
             <img src="<?php echo htmlspecialchars($user['img_url']); ?>" alt="Profile Picture" class="profile-img">
