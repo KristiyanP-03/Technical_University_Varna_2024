@@ -3,6 +3,21 @@ session_start();
 require 'db.php';
 
 $is_logged_in = isset($_SESSION['user_id']);
+$is_admin = false;
+
+if ($is_logged_in) {
+    $user_id = $_SESSION['user_id'];
+    $sql = "SELECT isAdministrator FROM users WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $user_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if ($result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        $is_admin = $user['isAdministrator'] == 1;
+    }
+    $stmt->close();
+}
 
 $sql = "SELECT job_offers.id, job_offers.title, job_offers.description, job_offers.likes, job_offers.created_at, users.username 
         FROM job_offers
@@ -28,6 +43,9 @@ $result = $conn->query($sql);
                 <a href="chat.php">Chat</a>
                 <a href="log_out.php">Log Out</a>
                 <a href="create_job_offer.php">Create Job Offer</a>
+                <?php if ($is_admin): ?>
+                    <a href="http://localhost:8081/" target="_blank">Administration</a>
+                <?php endif; ?>
             <?php else: ?>
                 <a href="log_in.php">Log In</a>
                 <a href="sign_up.php">Sign Up</a>
@@ -39,13 +57,11 @@ $result = $conn->query($sql);
         <h2>Welcome to Jobs.bg</h2>
         <p>Your one-stop platform for job opportunities!</p>
 
-
         <?php if ($result->num_rows > 0): ?>
             <h3>Available Job Offers</h3>
             <div class="job-offers-list">
 
-                <!-- Всички обяви да бъдат изредени една след една -->
-                <?php while($job = $result->fetch_assoc()): ?>
+                <?php while ($job = $result->fetch_assoc()): ?>
                     <div class="job-offer">
                         <h4><a href="view_job_offer.php?job_id=<?php echo $job['id']; ?>"><?php echo htmlspecialchars($job['title']); ?></a></h4>
                         <p><b>Posted by:</b> <?php echo htmlspecialchars($job['username']); ?></p>
@@ -64,7 +80,7 @@ $result = $conn->query($sql);
 </body>
 </html>
 
-
 <?php
 $conn->close();
 ?>
+
