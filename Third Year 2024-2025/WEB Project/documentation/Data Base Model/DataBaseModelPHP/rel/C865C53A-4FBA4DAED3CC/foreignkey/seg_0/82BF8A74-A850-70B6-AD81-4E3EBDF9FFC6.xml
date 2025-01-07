@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="82BF8A74-A850-70B6-AD81-4E3EBDF9FFC6" containerWithKeyObject="605F2522-287E-9FED-64CF-6E9E6E80A59C" localFKIndex="7AAA8E7E-3D1E-6AA7-0636-92F8AFB2227F" name="Reciver_Id">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:39:21 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<referredTableLongName>User</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3499DAAA-D63E-D6EE-14C7-1A965B3E613E</referredTableID>
+<keyObject>5B8F2A29-C400-433D-5280-A47E675BFA16</keyObject>
+<referredKeyID>5B8F2A29-C400-433D-5280-A47E675BFA16</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

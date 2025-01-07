@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="4093172F-1D05-6F8A-8687-C64D69CC0947" mainViewID="C622025E-3901-76E5-CAE6-7F8C542004B9">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:07:55 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

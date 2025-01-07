@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D18AD905-9FC4-A272-DB9D-C586E31288FB" name="Likes">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:09:55 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="953B7EBF-8706-2F12-F07D-90FDE3EAA19F">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:24:57 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="User_Id2" id="DB18B75B-9D86-3A35-D6FF-325A170D0204">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:35:07 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1A444BF3-7EA0-FEE7-C5C7-BC0E08BB715D" referredColumn="00F1B23F-D7AA-BCA1-16F2-7573080495B4"/>
+</associations>
+</Column>
+<Column name="Job_Offer_Id2" id="DB6E5327-E64C-CC4D-C91B-95A0B6AB3A1B">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:35:49 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D3AA9BB-385D-AB60-C840-1C4AFD305259" referredColumn="F46E58D4-CF22-88C7-D441-E96F6FEE17BA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4119AF2A-2093-6AD7-7A94-292CB224B5EE" name="Likes_PK">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:24:57 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="953B7EBF-8706-2F12-F07D-90FDE3EAA19F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEDDD414-B32B-4C3B-91EC-D3058DEAF97F" name="User_Idv2">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:35:07 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB18B75B-9D86-3A35-D6FF-325A170D0204"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED23577C-5717-F0AF-F8A7-90BDEE12AC78" name="Job_Offer_Id">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:35:49 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB6E5327-E64C-CC4D-C91B-95A0B6AB3A1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DataBaseModelPHP" id="2A43AA54-D3DF-668D-A800-B14DC46735DD" version="3.5">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:07:55 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2A43AA54-D3DF-668D-A800-B14DC46735DD</designId>
+</OSDM_Design>

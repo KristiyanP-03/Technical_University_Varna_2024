@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C36A91ED-A9AA-CDA1-5155-C7811FA33A09" containerWithKeyObject="579283D0-A0A0-8582-40D0-50E9AEEFD1A6" localFKIndex="7CD62B0A-2F83-B7E6-F164-3B9E9470ECE6" name="Job_Offer_Idv2">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:37:43 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<referredTableLongName>Job_Offer</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5D3A7017-12BC-DFEF-BE4D-ECE4E8590D6B</referredTableID>
+<keyObject>349F0B2C-5CEC-D09C-2068-8466DAB1DF93</keyObject>
+<referredKeyID>349F0B2C-5CEC-D09C-2068-8466DAB1DF93</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

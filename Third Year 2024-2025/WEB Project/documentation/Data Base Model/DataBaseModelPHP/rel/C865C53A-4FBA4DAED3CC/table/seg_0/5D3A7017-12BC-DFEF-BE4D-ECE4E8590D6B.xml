@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D3A7017-12BC-DFEF-BE4D-ECE4E8590D6B" name="Job_Offer">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:09:51 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="F46E58D4-CF22-88C7-D441-E96F6FEE17BA">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:19:51 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="User_Id" id="9278077C-F683-8595-9053-10FD1CBCEED3">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:32:02 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08B5FA80-FE3F-128F-2907-3E02A0EDD853" referredColumn="00F1B23F-D7AA-BCA1-16F2-7573080495B4"/>
+</associations>
+</Column>
+<Column name="Title" id="C1032BB6-E8FB-E4A4-422B-3B23767A64E9">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:20:39 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="64D058F1-4DAF-7ACD-A418-A109540E7BC1">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:21:00 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Image" id="72BD1449-FE64-8E1F-17ED-2E45F416B248">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:21:20 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Phone_Number" id="97340F51-B4C5-851D-E4C3-6918BCA9F46C">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:21:53 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Likes" id="DB79FA19-642E-C834-9B93-DE0C8653878C">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:22:10 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comments" id="5762475E-7CC1-E7E0-6993-6B8491B81860">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:23:58 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Created_At" id="FE454A6C-234A-65BD-6660-C5839D3AE57A">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:24:15 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="349F0B2C-5CEC-D09C-2068-8466DAB1DF93" name="Job_Offer_PK">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:19:51 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F46E58D4-CF22-88C7-D441-E96F6FEE17BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9E4790C-F961-246B-F011-9EC50B164116" name="User_Id">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:32:02 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9278077C-F683-8595-9053-10FD1CBCEED3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

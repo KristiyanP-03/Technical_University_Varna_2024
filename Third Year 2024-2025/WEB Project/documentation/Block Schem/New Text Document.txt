@@ -1,0 +1,36 @@
+                             +----------------------+
+                             |     Home Page        |
+                             +----------------------+
+                                       |
+                +----------------------+-------------------+
+                |                                          |
+         +-------------+                             +-------------+
+         |   [Log In]  |                             |  [Sign Up]  |
+         +-------------+                             +-------------+
+                |                                          |
+    +---------------------+-------------+                  +---------------------------+-----------------------------------+
+    |                     |             |                  |                           |                                   |
+[Check credentials]   [Success]     [Home Page]           [Create User]        [Redirect to Log In]                 [Home page] 
+    |                     |                         		|                             |
+[Redirect to Home]   [Redirect to Home]          	[Redirecting to Log In]      [Redirecting to Log In]
+                               |
+                               |
+                               |
+                               |
+                               |
+         +---------------------+--------------------------------+-----------------------------------+
+         |                     |				|		                    |
+     +-------+           +--------------------+			+---------------------+   +-------------------+
+     | [View  |           |  [Create Job Offer] |	        |    [Chat with User] |   | [Administration]  |
+     | Profile]           |  [Chat with User]   |	        +---------------------+   +-------------------+
+     +-------+           +--------------------+                      |                       |
+         |                     |                                     |                       |                               
++----------------+             +-----------+                         |                       |
+|                |                         |                         |                       |
+[Edit Profile]  [Delete Profile]   [Create Job Offer Form]    [Select User]                 [Admin Panel]        
+|                |                            |                    |                                       
+[Form to edit]   [Redirect to Home]   [Redirect to Home]      [Start Chat with User]        
+                                               |                                     
+                                    [View Details of Job Offer]     
+  
+

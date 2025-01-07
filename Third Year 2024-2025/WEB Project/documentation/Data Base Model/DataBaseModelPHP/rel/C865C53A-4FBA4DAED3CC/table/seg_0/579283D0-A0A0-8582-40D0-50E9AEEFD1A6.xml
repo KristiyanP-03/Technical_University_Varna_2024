@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="579283D0-A0A0-8582-40D0-50E9AEEFD1A6" name="Comments">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:09:58 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="A7A54C07-A249-546B-2B7F-15ED2FE167B3">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:26:19 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="User_Id" id="0E8E20A3-D7A4-626E-8891-A896291DD560">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:37:04 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A59748B-30DA-6B4A-DB47-9D8BF1146676" referredColumn="00F1B23F-D7AA-BCA1-16F2-7573080495B4"/>
+</associations>
+</Column>
+<Column name="Job_Offer_Id" id="CF4FC3DA-44D2-BF36-2B26-5D2B4BADF2C2">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:37:43 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C36A91ED-A9AA-CDA1-5155-C7811FA33A09" referredColumn="F46E58D4-CF22-88C7-D441-E96F6FEE17BA"/>
+</associations>
+</Column>
+<Column name="Comment" id="2F8E72FF-F4F6-BBAC-B5BC-5977C4111667">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:27:24 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Created_At" id="FA950625-8A0B-2382-516F-5D1E6E1BAA0C">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:27:37 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8200357-E934-D4D8-8859-1209BAD99CDF" name="User_Idv3">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:37:04 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8E20A3-D7A4-626E-8891-A896291DD560"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CD62B0A-2F83-B7E6-F164-3B9E9470ECE6" name="Job_Offer_Idv2">
+<createdBy>DELL</createdBy>
+<createdTime>2025-01-07 04:37:43 UTC</createdTime>
+<ownerDesignName>DataBaseModelPHP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF4FC3DA-44D2-BF36-2B26-5D2B4BADF2C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
