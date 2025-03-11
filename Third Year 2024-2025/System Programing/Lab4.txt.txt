@@ -1,0 +1,25 @@
+//void(*signal(int signo, void (*handler) (int))) (int);
+
+
+//sigint(2) - ctrl 
+//sigkill(9) - kill
+//sigterm(15) - ask to kill
+//sigstop(17) - stop
+//sigcont(19) - continue
+//sigsegv(11) -
+//sigchld(20) -
+//sighub(1) -
+//sigpire(13) -
+//sigalrm(14) - timer
+//sigusr(1)
+//sigusr(2)
+//sigbuss(7)
+//sigill(4) - error
+
+makros:
+
+WIFRXITED(status)
+WEXIFSTATUS(status)
+WIFISNALED(status)
+WTERMSIG(status)
+WCOREDUMP(status)
